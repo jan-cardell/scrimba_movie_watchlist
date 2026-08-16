@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white
+}
+
+header {
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem 5rem;
+}
+
+#watchlist-btn {
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+#watchlist-btn:hover{
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.fa-magnifying-glass {
+    color: gray;
+}
+
+#search-field {
+    text-align: center;
+}
+
+#search-input {
+    font-size: 2rem;
+}
+
+#exploring {
+    color: #DFDDDD;
+}
