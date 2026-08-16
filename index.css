@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
     color: white
 }
 
@@ -12,9 +13,11 @@ header {
 }
 
 #watchlist-btn {
+    font-size: 1.5rem;
     background: none;
     border: none;
     color: inherit;
+    margin-right: 4rem;
 }
 
 #watchlist-btn:hover{
@@ -23,20 +26,62 @@ header {
 
 h1 {
     font-size: 3.5rem;
+    margin-left: 4rem;
+}
+
+#search-field {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -2.2rem 9rem 0 9rem;
 }
 
 .fa-magnifying-glass {
     color: gray;
-}
-
-#search-field {
-    text-align: center;
+    background-color: white;
+    padding: 1.16rem 1.5rem 1.16rem 1.5rem;
+    border: 1px solid lightgray;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
 }
 
 #search-input {
     font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-btn {
+    background-color: #F9FAFB;
+    border: 1px solid lightgray;
+    border-radius: 0 1rem 1rem 0;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 #exploring {
     color: #DFDDDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.fa-film {
+    font-size: 10rem;
+}
+
+#exploring p{
+    font-size: 3rem;
+    margin: 0;
 }
