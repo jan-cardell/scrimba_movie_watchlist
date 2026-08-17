@@ -13,12 +13,22 @@ function getMovies() {
         .then(data => {
             exploringDiv.innerHTML = 
             `
-            <img src='${data.Poster}'>
-            <p>${data.Title}</p>
-            <p>${data.Ratings[0].Value}
-            <p>${data.Runtime}</p>
-            <p>${data.Genre}</p>
-            <p>${data.Plot}</p>
+            <div id='movie-item'>
+                <img id='poster' src='${data.Poster}'>
+                <div>
+                    <div id='movie-head'>
+                        <p>${data.Title}</p>
+                        <i class="fa-solid fa-star"></i>
+                        <p>${data.Ratings[0].Value}</p>
+                    </div>
+                        <p>${data.Runtime}</p>
+                        <p>${data.Genre}</p>
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <button>Watchlist</button>
+                    </div>
+                    <p>${data.Plot}</p>
+                </div>
+            </div>
             `
             }
         )
