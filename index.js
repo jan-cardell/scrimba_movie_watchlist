@@ -14,19 +14,20 @@ function getMovies() {
             exploringDiv.innerHTML = 
             `
             <div id='movie-item'>
-                <img id='poster' src='${data.Poster}'>
-                <div>
+                <img id='movie-poster' src='${data.Poster}'>
+                <div id='movie-body'>
                     <div id='movie-head'>
-                        <p>${data.Title}</p>
+                        <h2>${data.Title}</h2>
                         <i class="fa-solid fa-star"></i>
                         <p>${data.Ratings[0].Value}</p>
                     </div>
+                    <div id='movie-subhead'>
                         <p>${data.Runtime}</p>
                         <p>${data.Genre}</p>
                         <i class="fa-solid fa-circle-plus"></i>
                         <button>Watchlist</button>
                     </div>
-                    <p>${data.Plot}</p>
+                    <p id='movie-plot'>${data.Plot}</p>
                 </div>
             </div>
             `
