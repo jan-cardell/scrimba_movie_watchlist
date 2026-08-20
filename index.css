@@ -84,7 +84,7 @@ h1 {
     font-size: 10rem;
 }
 
-#exploring p{
+#exploring-start{
     font-size: 3rem;
     margin: 0;
 }
@@ -135,11 +135,16 @@ h1 {
     display: flex;
     color: black;
     align-items: center;
+    width: 70%;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: #E5E7EB 2px solid;
 }
 
 #movie-body {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 
 #movie-poster{
@@ -150,14 +155,22 @@ h1 {
     display: flex;
     align-items: center;
     font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fa-star {
+    margin: 0 0 0 1.5rem;
+    color: #FEC654;
 }
 
 #movie-head h2 {
+    margin: 0;
     font-size: 2rem;
     font-weight: 500;
 }
 
 #movie-head p {
+    margin: 0 0 0 0.5rem;
     font-size: 1.8rem;
     font-weight: 200;
 }
@@ -165,10 +178,21 @@ h1 {
 #movie-subhead {
     display: flex;
     font-weight: 200;
+    font-size: 1.2;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+#movie-genre {
+    margin-left: 1.5rem;
+}
+
+#add-plus{
+    margin-left: 1.5rem;
 }
 
 #movie-item p {
     font-size: 1.5rem;
-    max-width: 50%;
+    font-weight: 200;
 }
 

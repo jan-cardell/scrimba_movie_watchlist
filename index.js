@@ -22,10 +22,10 @@ function getMovies() {
                         <p>${data.Ratings[0].Value}</p>
                     </div>
                     <div id='movie-subhead'>
-                        <p>${data.Runtime}</p>
-                        <p>${data.Genre}</p>
-                        <i class="fa-solid fa-circle-plus"></i>
-                        <button>Watchlist</button>
+                        <p id='movie-runtime'>${data.Runtime}</p>
+                        <p id='movie-genre'>${data.Genre}</p>
+                        <i id='add-plus' class="fa-solid fa-circle-plus"></i>
+                        <p>Watchlist</p>
                     </div>
                     <p id='movie-plot'>${data.Plot}</p>
                 </div>
