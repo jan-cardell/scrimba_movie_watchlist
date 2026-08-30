@@ -155,7 +155,7 @@ h1 {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .fa-star {
@@ -179,7 +179,7 @@ h1 {
     display: flex;
     font-weight: 200;
     font-size: 1.2;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     align-items: center;
 }
 
@@ -195,4 +195,18 @@ h1 {
     font-size: 1.5rem;
     font-weight: 200;
 }
+
+#add-watchlist-btn {
+    display: flex;
+    align-items: center;
+}
+
+#add-watchlist-btn p {
+    margin-left: 0;
+}
+
+#add-watchlist-btn .fa-circle-plus{
+    margin-right: 0;
+}
+
 
