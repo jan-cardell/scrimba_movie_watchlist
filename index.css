@@ -93,7 +93,7 @@ h1 {
 
 /* Special Styling for watchlist site */
 
-#empty-watchlist {
+#watchlist {
     color: #DFDDDD;
     display: flex;
     flex-direction: column;
@@ -101,11 +101,11 @@ h1 {
     margin-top: 10%;
 }
 
-#empty-watchlist p {
+#watchlist p {
     font-size: 2rem;
 }
 
-#empty-watchlist a {
+#watchlist a {
     color: #363636;
 }
 

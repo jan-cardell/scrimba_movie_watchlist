@@ -1,19 +1,16 @@
 const exploringDiv = document.getElementById('exploring')
 const searchBtn = document.getElementById('search-btn')
 const searchInput = document.getElementById('search-input')
-
-let watchlist = []
+let watchlist = {}
 
 searchBtn.addEventListener('click', getMovies)
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
-        console.log(e.target.dataset.add)
         fetch (`http://www.omdbapi.com/?apikey=32c2d752&i=${e.target.dataset.add}`)
             .then(res => res.json())
             .then(data => {
-                watchlist.push(
-                    `
+                watchlist[e.target.dataset.add] = {body: `
                     <div id='movie-item'>
                         <img id='movie-poster' src='${data.Poster}'>
                         <div id='movie-body'>
@@ -33,9 +30,11 @@ document.addEventListener('click', function(e){
                             <p id='movie-plot'>${data.Plot}</p>
                         </div>
                     </div>
-                    `)
-                console.log(watchlist)
-                })
+                    `}
+                
+                renderLocalStorage()
+                console.log(localStorage)
+            })
     }
 })
 
@@ -43,7 +42,6 @@ function getMovies() {
     fetch (`http://www.omdbapi.com/?apikey=32c2d752&t=${searchInput.value}`)
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             exploringDiv.innerHTML = 
             `
             <div id='movie-item'>
@@ -68,4 +66,8 @@ function getMovies() {
             `
             }
         )
+}
+
+function renderLocalStorage(){
+    localStorage.setItem("watchlist", JSON.stringify(watchlist))
 }
