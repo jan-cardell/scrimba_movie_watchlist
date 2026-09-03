@@ -32,8 +32,8 @@ document.addEventListener('click', function(e){
                     </div>
                     `}
                 
+                console.log(watchlist)
                 renderLocalStorage()
-                console.log(localStorage)
             })
     }
 })
