@@ -1,7 +1,7 @@
 const exploringDiv = document.getElementById('exploring')
 const searchBtn = document.getElementById('search-btn')
 const searchInput = document.getElementById('search-input')
-let watchlist = JSON.parse( localStorage.getItem("watchlist") )
+const watchlist = JSON.parse(localStorage.getItem('watchlist')) || {}
 
 searchBtn.addEventListener('click', getMovies)
 
