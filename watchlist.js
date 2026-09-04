@@ -1,5 +1,5 @@
 const watchlistDiv = document.getElementById('watchlist')
-const watchlist = JSON.parse(localStorage.getItem('watchlist')) || {}
+const moviesFromLocalStorage = JSON.parse(localStorage.getItem('watchlist')) || {}
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.remove){
