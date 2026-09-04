@@ -7,7 +7,7 @@ searchBtn.addEventListener('click', getMovies)
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.add){
-        fetch (`http://www.omdbapi.com/?apikey=32c2d752&i=${e.target.dataset.add}`)
+        fetch (`https://www.omdbapi.com/?apikey=32c2d752&i=${e.target.dataset.add}`)
             .then(res => res.json())
             .then(data => {
                 watchlist[e.target.dataset.add] = {body: `
@@ -43,7 +43,7 @@ searchInput.addEventListener('keydown', (e) => {
 })
 
 function getMovies() {
-    fetch (`http://www.omdbapi.com/?apikey=32c2d752&t=${searchInput.value}`)
+    fetch (`https://www.omdbapi.com/?apikey=32c2d752&t=${searchInput.value}`)
         .then(res => res.json())
         .then(data => {
             exploringDiv.innerHTML = 
